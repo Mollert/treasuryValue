@@ -1,0 +1,72 @@
+
+@font-face { src: url("assets/arbutusSlab.ttf"); font-family: arbutus; }
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#blanket {
+	width: 96vw;
+	height: auto;
+	margin: 2vw 0 0 2vw;
+	background-color: rgb(230,233,202);
+	font-family: arbutus;
+	font-size: 1.2rem;
+}
+
+#title {
+	padding: 2rem 1rem;
+	text-align: center;
+}
+
+#main {
+	font-size: 1.6rem;
+}
+
+#minor {
+	margin-top: 0.6rem;
+	font-size: 1.4rem;
+}
+
+#entries {
+	margin: 0 2rem;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.entryTop {
+	margin: 1rem 0 0 0;
+}
+
+input {
+	width: 10rem;
+	height: 1.6rem;
+	font-size: 1.2rem;
+	border-radius: 0.4rem;
+}
+
+#clickV {
+	margin: 2rem 2rem 0 2rem;
+	width: 14rem;
+	height: 3rem;
+	font-family: arbutus;
+	font-size: 1.2rem;
+	text-align: center;
+	border-radius: 0.4rem;
+	background-color: Thistle;
+
+}
+
+#results {
+	margin: 2rem 2rem;
+}
+
+#clearBottom {
+	width: 100%;
+	height: 4vw;
+}

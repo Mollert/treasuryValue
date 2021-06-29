@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+	<title>Value of Treasury bonds</title>
+	
+	<meta name="description" content="Describe website for search engines.">
+	
+	<link rel="shortcut icon" href="./assets/rotateBondFavicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="./cssBond.css">
+
+</head>
+<body>
+	<div id="blanket">
+		<div id="title">
+			<div id="main">30 Year Treasury Bond vs. Certificate of Deposit</div>
+			<div id="minor">Comparing the returns over a 5 year period</div>
+		</div>
+		
+		<div id="entries">
+			<div class="flexColumn">
+				<label for="faceV">Treasury Face Value:</label>
+				<input type="text" id="faceV" name="faceV" placeholder="$" autocomplete="off" value=10000></div>
+			<div class="flexColumn entryTop">
+				<label for="couponR">Coupon (Existing) Rate:</label>
+				<input type="text" id="couponR" name="couponR" placeholder="x.x%" autocomplete="off">
+			</div>
+			<div class="flexColumn entryTop">
+				<label for="currentR">Current Market Rate:</label>
+				<input type="text" id="currentR" name="currentR" placeholder="x.x%" autocomplete="off">
+			</div>
+			<div class="flexColumn entryTop">
+				<label for="cdR">5 Year CD Rate:</label>
+				<input type="text" id="cdR" name="cdR" placeholder="x.x%" autocomplete="off" value="0.8"></div>
+
+			<button type="button" id="clickV">Compare the value</button>
+
+		</div>
+
+		<div id="results">
+
+			<div>The present bonds value is discounted to = $<span id="presentV">?</span></div>
+
+			<div class="entryTop">The present bonds value plus all dividends = $<span id="presentVD">?</span></div>
+
+			<div class="entryTop">The value of the CD plus all its interest = $<span id="cdV">?</span></div>
+
+			<div class="entryTop">Assuming the Current Market Rate is higher than the Coupon Rate, then the Current Market Rate would have to increase to <span id="whatRate">?</span>% before all of the present bond dividends minus the discounted portion of its value would be a smaller amount than the 5 year CD returns. If that was to happen, it would be a sign to sell the present bond and buy a new one.</div>
+
+		</div>
+
+		<div id="clearBottom"></div>
+
+	</div>
+
+	<script src="./bondCalculations.js"></script>
+
+</body>
+</html>
