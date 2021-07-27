@@ -6,7 +6,7 @@ html, body {
 	padding: 0;
 }
 
-#blanket {
+.blanket {
 	width: 96vw;
 	height: auto;
 	margin: 2vw 0 0 2vw;
@@ -15,21 +15,21 @@ html, body {
 	font-size: 1.2rem;
 }
 
-#title {
+.title {
 	padding: 2rem 1rem;
 	text-align: center;
 }
 
-#main {
+.main {
 	font-size: 1.6rem;
 }
 
-#minor {
+.minor {
 	margin-top: 0.6rem;
 	font-size: 1.4rem;
 }
 
-#entries {
+.entries {
 	margin: 0 2rem;
 }
 
@@ -50,7 +50,7 @@ input {
 	border-radius: 0.4rem;
 }
 
-#clickV {
+.clickBtn {
 	margin: 2rem 2rem 0 2rem;
 	width: 14rem;
 	height: 3rem;
@@ -62,11 +62,15 @@ input {
 
 }
 
-#results {
+.results {
 	margin: 2rem 2rem;
 }
 
-#clearBottom {
+.link {
+	margin: 1rem 4rem;
+}
+
+.clearBottom {
 	width: 100%;
 	height: 4vw;
 }

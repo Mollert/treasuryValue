@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+	<title>Price a Treasury bond</title>
+	
+	<meta name="description" content="Describe website for search engines.">
+	
+	<link rel="shortcut icon" href="./assets/rotateBondFavicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="./cssBond.css">
+
+</head>
+<body>
+	<div class="blanket">
+		<div class="title">
+			<div class="main">Pricing out a 30 Year Treasury Bond</div>
+			<div class="minor">With a $1,000 face value</div>
+			<div class="minor">Semi-annually interest payments</div>			
+			<div class="minor">At any time during its life</div>			
+		</div>
+		
+		<div class="entries">
+			<div class="flexColumn entryTop">
+				<label for="couponR">Coupon (Existing) Rate:</label>
+				<input type="text" id="couponR" name="couponR" placeholder="x.x%" autocomplete="off">
+			</div>
+			<div class="flexColumn entryTop">
+				<label for="currentR">Current Market Rate:</label>
+				<input type="text" id="currentR" name="currentR" placeholder="x.x%" autocomplete="off">
+			</div>
+			<div class="flexColumn entryTop">
+				<label for="matureD">Maturity Date (month/year):</label>
+				<input type="text" id="matureD" name="matureD" placeholder="xx/xxxx" autocomplete="off"></div>
+
+			<button type="button" id="clickP" class="clickBtn">Price it</button>
+
+		</div>
+
+		<div class="results">
+
+			<div>As of todays date, there are <span id="payments">?</span> interests payments until bond matures.  Presently the bond carries a price of $<span id="presentP">?</span>.</div>
+
+			<div class="link">Let's go <a href="./index.html">home</a>.</div>
+
+		</div>
+		<div class="clearBottom"></div>
+	</div>
+
+	<script src="./calculationsPrice.js"></script>
+
+</body>
+</html>
