@@ -8,7 +8,7 @@ html, body {
 
 .blanket {
 	width: 96vw;
-	height: auto;
+	height: 100vh;
 	margin: 2vw 0 0 2vw;
 	background-color: rgb(230,233,202);
 	font-family: arbutus;
