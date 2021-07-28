@@ -8,11 +8,15 @@ html, body {
 
 .blanket {
 	width: 96vw;
-	height: 100vh;
+	height: auto;
 	margin: 2vw 0 0 2vw;
 	background-color: rgb(230,233,202);
 	font-family: arbutus;
 	font-size: 1.2rem;
+}
+
+.viewHeight {
+	height: 100vh;
 }
 
 .title {
