@@ -33,7 +33,7 @@ document.getElementById("clickV").addEventListener("click", () => {
 
 // Present Bond value
 	document.getElementById("presentV").textContent = currentValue.toFixed(2);
-	if (bondAllValue > faceValue) {
+	if (currentValue > faceValue) {
 		document.getElementById("presentDir").textContent = "has increased";		
 	} else {
 		document.getElementById("presentDir").textContent = "is discounted";
