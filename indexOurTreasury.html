@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+	<title>Price our 20-year Treasury bond</title>
+	
+	<meta name="description" content="Describe website for search engines.">
+	
+	<link rel="shortcut icon" href="./assets/rotateBondFavicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="./cssBond.css">
+
+</head>
+<body>
+	<div class="blanket">
+		<div class="title">
+			<div class="main">The value of our 20-year Treasury Bond.</div>
+			<div class="minor">Using $1,000 as face value. We paid $996.674.</div>
+			<div class="minor">Coupon rate of 2.375%.</div>
+			<div class="minor">Maturity date of 2/15/2042.</div>
+			<div class="minor">Semi-annually interest payments.</div>
+		</div>
+		
+		<div class="entries">
+			<div class="flexColumn entryTop">
+				<label for="whatR">Current Market Rate:</label>
+				<input type="text" id="whatR" name="whatR" placeholder="x.x%" autocomplete="off">
+			</div>
+
+			<div class="flexColumn entryTop">
+				<label for="newD">Current or Future Date (month/year):</label>
+				<input type="text" id="newD" name="newD" placeholder="xx/xxxx" autocomplete="off">
+			</div>
+
+			<button type="button" id="clickR" class="clickBtn">Check the return</button>
+		</div>
+
+		<div class="results">
+			<div>The calculated present value of the bond per the input date is: $<span id="currentV"></span>.</div>
+
+			<div class="entryTop">Adding the interest payments that we have already recieved to the value gives us a return of: $<span id="aReturn"></span>.</div>
+
+			<div class="entryTop">Covering <span id="intPay"></span> interest payments, a rough yearly annualized return would be: <span id="yearR"></span>%.</div>
+
+		</div>
+
+		<div class="link">Let's go <a href="./index.html">home</a>.</div>
+
+		<div class="clearBottom"></div>
+	</div>
+
+	<script src="./calculationsourTreasury.js"></script>
+
+</body>
+</html>
