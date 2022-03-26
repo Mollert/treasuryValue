@@ -57,8 +57,8 @@ document.getElementById("clickR").addEventListener("click", () => {
 	document.getElementById("aReturn").textContent = aReturn.toFixed(2);
 
 // Figuring a rough yearly percentage
-	let profit = aReturn - 996.6738;
-	let profitYield = profit / 996.6738;
+	let profit = aReturn - 997.5268;
+	let profitYield = profit / 997.5268;
 
 	let timeSpan = 0;
 	if (theYear === 2022) {
@@ -70,15 +70,8 @@ document.getElementById("clickR").addEventListener("click", () => {
 	}
 	timeSpan = timeSpan / 12;
 
-	console.log(timeSpan);
-// Stepping through annualized formula
-	let profitPlus = 1 + profitYield;
-	let timePower = 1 / timeSpan;
-	let returnPower = Math.pow(profitPlus, timePower);
-	let annualizedPercent = (returnPower - 1) * 100;
-
-	console.log(annualizedPercent);
+	let yearPercent = (profitYield / timeSpan) * 100;
 
 	document.getElementById("intPay").textContent = (40 - periods);
-	document.getElementById("yearR").textContent = annualizedPercent.toFixed(2);	
+	document.getElementById("yearR").textContent = yearPercent.toFixed(2);	
 });
